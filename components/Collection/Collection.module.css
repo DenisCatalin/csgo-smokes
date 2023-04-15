@@ -19,5 +19,12 @@
     position: relative;
     width: 273px;
     height: 509px;
+}
 
+@media screen and (min-width: 2400px) {
+    .agent {
+        position: relative;
+        width: 400px;
+        height: 709px;
+    }
 }
