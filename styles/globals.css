@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 html,
 body {
   padding: 0;
@@ -13,12 +15,37 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: var(--font);
+}
+
+:root {
+  --ancient: rgba(32, 105, 17, 0.61);
+  --anubis: rgba(255, 233, 173, 0.61);
+  --dust2: rgba(99, 118, 133, 0.61);
+  --mirage: rgba(255, 219, 118, 0.61);
+  --nuke: #5d79ae8a;
+  --inferno: #ae845d8a;
+  --vertigo: #cacaca8a;
+  --overpass: rgba(180, 153, 76, 0.61);
+  --font: 'Lato', sans-serif;
+}
+
+.container {
+  background-image: url("/images/csgo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: rgb(48, 48, 48); */
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;

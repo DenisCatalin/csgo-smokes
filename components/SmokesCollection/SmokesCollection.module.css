@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    height: 85vh;
+    padding: 1rem;
+    display: flex;
+    gap: 2ch;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+}
