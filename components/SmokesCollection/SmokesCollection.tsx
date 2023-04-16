@@ -9,7 +9,7 @@ type ISmokesCollection = {
 
 const ancientNades: string[] = [];
 const anubisNades: string[] = [];
-const dust2Nades: string[] = [];
+const dust2Nades: string[] = ["https://www.youtube.com/watch?v=F63Jo4t9KM0"];
 const infernoNades: string[] = ["https://www.youtube.com/watch?v=tlSte8xV2j4"];
 const mirageNades: string[] = [
   "https://www.youtube.com/watch?v=vycnXsYCNj0",
