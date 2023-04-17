@@ -4,11 +4,14 @@ import Header from "../components/Header/Header";
 import Head from "next/head";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
+import ReactPlayer from "react-player";
 import SmokesCollection from "../components/SmokesCollection/SmokesCollection";
 
 const Nades = () => {
   const userRedux = useSelector((state: any) => state.user.user);
   const router = useRouter();
+  const playerRef = React.useRef<ReactPlayer>(null);
+  const [isPlaying, setIsPlaying] = React.useState<boolean>(true);
 
   useEffect(() => {
     let isMounted = true;
@@ -36,6 +39,15 @@ const Nades = () => {
       <Header />
       <SmokesCollection map={userRedux.mapSelected} />
       <Footer />
+      <ReactPlayer
+        url={"/audio/shot.wav"}
+        playing={isPlaying}
+        ref={playerRef}
+        volume={0.3}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        style={{ display: "none" }}
+      />
     </div>
   );
 };

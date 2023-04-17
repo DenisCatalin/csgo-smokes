@@ -30,6 +30,16 @@ a {
   --font: 'Lato', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 153, 153);
+  border-radius: 20px;
+}
+
 .container {
   background-image: url("/images/csgo.jpg");
   background-repeat: no-repeat;

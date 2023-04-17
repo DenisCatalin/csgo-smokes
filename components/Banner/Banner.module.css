@@ -1,12 +1,12 @@
 .coverMap {
     position: relative;
-    transition: all .3s ease-in-out;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .mapImage {
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+    object-fit: cover;
 }
 
 .coverMap:nth-child(1),
@@ -45,6 +45,10 @@
     flex-direction: column;
     opacity: 0;
     transition: .5s ease-in-out;
+}
+
+.coverMap:hover {
+    transform: translateY(10%);
 }
 
 .coverMap:hover .coverInfo {
