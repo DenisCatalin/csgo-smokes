@@ -61,10 +61,11 @@ const MapPoints = () => {
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 0.3 }}
           >
-            <Tooltip title={point.name} placement={point.tooltipPosition}>
+            <Tooltip title={point.name} placement={point.tooltipPosition} key={index}>
               <Image
                 src={point.image}
                 alt={point.name}
+                key={index}
                 width={30}
                 height={30}
                 className={styles.point}
@@ -84,8 +85,8 @@ const MapPoints = () => {
           {"Videos"}
         </DialogTitle>
         <DialogContent style={{ background: "#141414" }}>
-          {dialogContent?.map((content: any) => (
-            <Smoke video={content} />
+          {dialogContent?.map((content: any, index: number) => (
+            <Smoke video={content} key={index} />
           ))}
         </DialogContent>
         <DialogActions style={{ background: "#141414" }}>
