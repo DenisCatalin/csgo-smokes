@@ -1,0 +1,15 @@
+.point {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgb(119, 119, 119);
+    border-radius: 50%;
+    /* rgb(255, 81, 0) molotov */
+    /* rgb(255, 255, 255) flash */
+    /* rgb(255, 255, 255) nade */
+    /* rgb(119, 119, 119) smoke */
+}
+
+.point:hover {
+    transform: scale(1.2);
+}

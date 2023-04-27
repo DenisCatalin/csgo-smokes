@@ -3,8 +3,25 @@ import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Collection from "../components/Collection/Collection";
+import { useSelector, useDispatch } from "react-redux";
+import { setUserState } from "../redux/user.slice";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+  const userRedux = useSelector((state: any) => state.user.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(
+      setUserState({
+        ...userRedux,
+        mapSelected: "",
+        nadeSelected: "",
+        agentLooking: "left",
+      })
+    );
+  }, []);
+
   return (
     <div className="container">
       <Head>

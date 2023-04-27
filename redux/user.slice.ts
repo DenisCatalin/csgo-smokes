@@ -6,7 +6,9 @@ const initialState = {
     logged: false,
     admin: false,
     mapSelected: "",
-    agentLooking: "left"
+    nadeSelected: "",
+    agentLooking: "left",
+    selectedPosition: "",
   },
 };
 
