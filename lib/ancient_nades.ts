@@ -103,7 +103,8 @@ export const ANCIENT_NADES: INades = {
       tooltipPosition: "right",
       urls: [
         "https://www.youtube.com/watch?v=3acorz7su0U",
-
+        "https://www.youtube.com/watch?v=KPydTrCup-A",
+        "https://www.youtube.com/watch?v=Jgoa5BwZXAw"
       ]
     },
     {
@@ -117,22 +118,170 @@ export const ANCIENT_NADES: INades = {
       ]
     }
   ],
-  flashbangs: [],
+  flashbangs: [
+    {
+      name: "B doors",
+      top: "60%",
+      left: "55.5%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "right",
+      urls: [
+        "https://www.youtube.com/watch?v=hYX2Wqo9miE"
+      ]
+    },
+    {
+      name: "Construction, Cave",
+      top: "56%",
+      left: "49%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=SwO3oUgALDM",
+        "https://www.youtube.com/watch?v=gNcepeAYAFY",
+        "https://www.youtube.com/watch?v=MiLjTZjUxjE"
+      ]
+    },
+    {
+      name: "Mid - 1",
+      top: "59%",
+      left: "42%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=mvF95HJa58c"
+      ]
+    },
+    {
+      name: "Mid - 2",
+      top: "50%",
+      left: "41.5%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=tLmo8ncC02I"
+      ]
+    },
+    {
+      name: "A site - 1",
+      top: "36%",
+      left: "38%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=ht_PCIG0NgE"
+      ]
+    },
+    {
+      name: "A site - 2",
+      top: "35%",
+      left: "35%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=KsaROVYUCcU"
+      ]
+    },
+    {
+      name: "B site",
+      top: "57%",
+      left: "58%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=1S76id19fj8"
+      ]
+    },
+    {
+      name: "Xbox",
+      top: "58.5%",
+      left: "45%",
+      image: "/images/flashbang.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=1wbFe4dZVaQ"
+      ]
+    }
+  ],
   molotovs: [
     {
       name: "Ninja",
       top: "49%",
       left: "52.5%",
       image: "/images/molotov.png",
+      tooltipPosition: "right",
+      urls: [
+        "https://www.youtube.com/watch?v=R2a6o3Kn0rE"
+      ]
+    },
+    {
+      name: "Banana",
+      top: "56.5%",
+      left: "53.5%",
+      image: "/images/molotov.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=ZCt8tJgDN10"
+      ]
+    },
+    {
+      name: "B Doors",
+      top: "60%",
+      left: "55.5%",
+      image: "/images/molotov.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=HgcUoGaz_gc"
+      ]
+    },
+    {
+      name: "Cave, Pillar",
+      top: "42%",
+      left: "52.5%",
+      image: "/images/molotov.png",
+      tooltipPosition: "top",
+      urls: [
+        "https://www.youtube.com/watch?v=VsN5i31Rqzo",
+        "https://www.youtube.com/watch?v=teJ_wFI0cXI",
+        "https://www.youtube.com/watch?v=D-e3RywdMrY",
+        "https://www.youtube.com/watch?v=ojpNfJLXtPQ",
+        "https://www.youtube.com/watch?v=mXntpsaeYdc",
+        "https://www.youtube.com/watch?v=wdhF0f2pIc8"
+      ]
+    },
+    {
+      name: "Temple",
+      top: "25%",
+      left: "35%",
+      image: "/images/molotov.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=zKFLAEddwlE"
+      ]
+    },
+    {
+      name: "One way",
+      top: "49%",
+      left: "50.5%",
+      image: "/images/molotov.png",
+      tooltipPosition: "bottom",
+      urls: [
+        "https://www.youtube.com/watch?v=cXjUs-lkAVI"
+      ]
+    },
+    {
+      name: "Pit",
+      top: "48%",
+      left: "45.5%",
+      image: "/images/molotov.png",
       tooltipPosition: "bottom",
       urls: []
     },
     {
-      name: "Deny plant A",
-      top: "30%",
-      left: "36.5%",
+      name: "Wood",
+      top: "45%",
+      left: "52.5%",
       image: "/images/molotov.png",
-      tooltipPosition: "bottom",
+      tooltipPosition: "right",
       urls: []
     }
   ],

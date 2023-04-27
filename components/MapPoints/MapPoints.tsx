@@ -110,7 +110,7 @@ const MapPoints = () => {
             break;
           }
           case "grenade": {
-            const positions = ANCIENT_NADES.smokes;
+            const positions = ANCIENT_NADES.grenades;
             positions.map((position: any) => {
               if (position.name === selectedPosition) {
                 setDialogContent(position.urls);
@@ -119,7 +119,7 @@ const MapPoints = () => {
             break;
           }
           case "flashbang": {
-            const positions = ANCIENT_NADES.smokes;
+            const positions = ANCIENT_NADES.flashbangs;
             positions.map((position: any) => {
               if (position.name === selectedPosition) {
                 setDialogContent(position.urls);
@@ -128,7 +128,48 @@ const MapPoints = () => {
             break;
           }
           case "molotov": {
-            const positions = ANCIENT_NADES.smokes;
+            const positions = ANCIENT_NADES.molotovs;
+            positions.map((position: any) => {
+              if (position.name === selectedPosition) {
+                setDialogContent(position.urls);
+              }
+            });
+            break;
+          }
+        }
+        break;
+      }
+      case "anubis": {
+        switch (nadeSelected) {
+          case "smoke": {
+            const positions = ANUBIS_NADES.smokes;
+            positions.map((position: any) => {
+              if (position.name === selectedPosition) {
+                setDialogContent(position.urls);
+              }
+            });
+            break;
+          }
+          case "grenade": {
+            const positions = ANUBIS_NADES.grenades;
+            positions.map((position: any) => {
+              if (position.name === selectedPosition) {
+                setDialogContent(position.urls);
+              }
+            });
+            break;
+          }
+          case "flashbang": {
+            const positions = ANUBIS_NADES.flashbangs;
+            positions.map((position: any) => {
+              if (position.name === selectedPosition) {
+                setDialogContent(position.urls);
+              }
+            });
+            break;
+          }
+          case "molotov": {
+            const positions = ANUBIS_NADES.molotovs;
             positions.map((position: any) => {
               if (position.name === selectedPosition) {
                 setDialogContent(position.urls);
